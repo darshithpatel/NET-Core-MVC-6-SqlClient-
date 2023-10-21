@@ -1,0 +1,74 @@
+﻿@{
+    ViewData["Title"] = "Client List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using System.Data
+@model DataTable
+
+<div class="heading">
+      <span class="heading-text">
+        <ion-icon name="people-outline"></ion-icon>
+        <p class="new-registration">Client List</p></span
+      >
+    </div>
+
+<div class="add-client">
+    <a class="btn" style="color:#fff;" asp-controller="Clients" asp-action="Add">
+        Add Client <ion-icon name="person-add-outline"></ion-icon>
+    </a>
+</div>
+
+    <table id="myTable" class="table-section">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Gender</th>
+          <th class="action-th">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach (DataRow dr in Model.Rows)
+        {
+            <tr>
+                <td data-label="First Name">@dr["FirstName"]</td>
+                <td data-label="Last Name">@dr["LastName"]</td>
+                <td data-label="Age">@dr["Age"]</td>
+                <td data-label="Email">@dr["Email"]</td>
+                <td data-label="Gender">@dr["Gender"]</td>
+                <td data-label="Actions">
+                    <div class="button-container">
+                        <form method="post" asp-controller="Clients" asp-action="Add">
+                            <input type="hidden" name="ClientID" value="@Convert.ToInt32(dr["ClientID"])" />
+                            <button type="submit" class="action-btn btn-update" asp-controller="Clients" asp-action="Add" asp-route-countryid="@Convert.ToInt32(dr["ClientID"])">Update</button>
+                        </form>
+                        <form method="post" asp-controller="Clients" asp-action="Delete">
+                            <input type="hidden" name="ClientID" value="@Convert.ToInt32(dr["ClientID"])" />
+                            <button class="action-btn btn-delete" type="submit" onclick="return confirm('Are you sure you want to delete?')">Delete</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+
+      </tbody>
+    </table>
+
+@section Scripts{
+
+<!-- jQuery DataTables scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+<!-- jQuery DataTables table-function -->
+<script>
+    $(document).ready(function () {
+        $("#myTable").DataTable();
+    });
+</script>
+}

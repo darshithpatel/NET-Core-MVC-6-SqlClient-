@@ -1,0 +1,288 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body,
+input {
+    font-family: "Poppins", sans-serif;
+}
+
+.heading {
+    text-align: center;
+    margin-block-start: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading-text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.form-class {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.logo,
+.logo-book {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo-book {
+    font-size: 27px;
+    background: linear-gradient( 0deg, rgba(255, 0, 255, 0) 16%, #faa433 16%, #faa433 41%, rgba(255, 0, 255, 0) 41% );
+}
+
+.new-registration {
+    font-size: 24px;
+    background: linear-gradient( 0deg, rgba(255, 0, 255, 0) 16%, #faa433 16%, rgba(255, 0, 255, 0) 41% );
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #786ca0;
+}
+
+.btn:hover {
+    background-color: #f18110;
+}
+
+.logo:hover,
+.btn:hover {
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-client {
+    display: flex;
+    justify-content: flex-end;
+    margin-right:10%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #faa433;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.customFormStyle{
+    
+}
+
+.btn ion-icon {
+    margin-left: 10px;
+}
+
+.new-registration {
+    margin-right: 10px;
+}
+
+.containerForm {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 30px 0 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.content form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+    .user-details .input-box input:focus {
+        border-color: #786ca0;
+    }
+
+form .gender-details .gender-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .category {
+    display: flex;
+    width: 47%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+    form .category label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+form input[type="date"] {
+    color: #707070;
+}
+
+    form input[type="date"]:valid {
+        color: #333;
+    }
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .category label .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: #d9d9d9;
+    border: 3px solid transparent;
+    transition: all 0.1s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+    background: #786ca0;
+    border-color: #d9d9d9;
+}
+
+form .button, .registerButton {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+    form .button button, .registerButton {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: #faa433;
+    }
+
+        form .button button:hover {
+            background-color: #786ca0;
+        }
+
+        .registerButton:hover {
+            background-color: #786ca0;
+        }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap:8px;
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    form .category {
+        width: 100%;
+    }
+
+    .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+        .user-details::-webkit-scrollbar {
+            width: 5px;
+        }
+}
+
+@media (max-width: 459px) {
+    .category {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-navbar {
+        flex-direction: column;
+    }
+
+    .right {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .add-client {
+        display: flex;
+        justify-content: center;
+        margin-left:50px;
+    }
+}
+
+@media (max-width: 840px) {
+    .button-container {
+        justify-content: flex-end;
+    }
+}
+

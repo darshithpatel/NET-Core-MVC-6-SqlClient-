@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "New Client Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ClientsModel
+
+<div class="heading">
+    <span class="heading-text">
+        <ion-icon name="newspaper-outline"></ion-icon>
+        <p class="new-registration">New Registration</p>
+    </span>
+</div>
+
+<div class="form-class">
+    <div class="containerForm">
+        <div class="content">
+            <h3>@TempData["ClientInsertMsg"]</h3> @* Temporary message (client registered.) *@
+            <form method="post" asp-controller="Clients" asp-action="Save" enctype="multipart/form-data">
+                @Html.HiddenFor(x=>x.ClientID) @* Fetches ClientID for Update purposes. *@
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name</span>
+                        <input type="text" class="form-control" placeholder="Your First name" asp-for="FirstName" required>
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class="form-control" placeholder="Your last name" asp-for="LastName" required>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="number" class="form-control" placeholder="How old are you?" asp-for="Age" required>
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" class="form-control" placeholder="Enter your email" asp-for="Email" required>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <input type="text" class="form-control" placeholder="Your last name" asp-for="Gender" required>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                    
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register" class="registerButton">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial"); //for activating model-validations.
+    }
+}

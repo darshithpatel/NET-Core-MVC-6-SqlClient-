@@ -1,0 +1,53 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BasicsCRUD
+build_property.RootNamespace = BasicsCRUD
+build_property.ProjectDir = D:\Gateway\Tasks\18-10-2023 - .Net crud\CRUD in .NET\BasicsCRUD\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Gateway\Tasks\18-10-2023 - .Net crud\CRUD in .NET\BasicsCRUD
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Clients/ClientsAddEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDbGllbnRzQWRkRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Clients/ClientsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xDbGllbnRzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Gateway/Tasks/18-10-2023 - .Net crud/CRUD in .NET/BasicsCRUD/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pn6ow4joga

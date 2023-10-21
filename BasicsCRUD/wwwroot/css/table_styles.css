@@ -1,0 +1,122 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* TABLE */
+
+table {
+    width: 850px; /* Adjust the width as needed */
+    margin: 5% auto; /* Center horizontally */
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+    padding: 8px; /* Decreased padding for less space between columns */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+th {
+    background-color: var(--colorYellow);
+    color: var(--colorWhite);
+    font-weight: 500;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.action-th {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-btn {
+    padding: 3px 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+    .action-btn:hover {
+        background-color: #2f363f;
+    }
+
+.btn-update {
+    background-color: #01aeb6;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #d8544a;
+    color: white;
+}
+
+/* Responsive styles for the table */
+@media (max-width: 856px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media (max-width: 840px) {
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+        table td::before {
+            /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+            content: attr(data-label);
+            float: left;
+            font-weight: bold;
+        }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .main-navbar {
+        flex-direction: column;
+    }
+
+    .right {
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
+}
